@@ -129,6 +129,7 @@ print("\nExemplo Bom - Aplicando OCP:")
 
 from abc import ABC, abstractmethod
 
+
 class Cliente(ABC):
     @abstractmethod
     def obter_taxa_desconto(self):
@@ -221,6 +222,7 @@ print("\nExemplo Bom - Aplicando LSP:")
 
 from abc import ABC, abstractmethod
 
+
 class Forma(ABC):
     @abstractmethod
     def area(self):
@@ -266,6 +268,7 @@ print("É melhor ter muitas interfaces específicas do que uma interface geral."
 print("\nExemplo Ruim - Violando ISP:")
 
 from abc import ABC, abstractmethod
+
 
 class Trabalhador(ABC):
     @abstractmethod
@@ -316,6 +319,7 @@ robo.trabalhar()
 print("\nExemplo Bom - Aplicando ISP:")
 
 from abc import ABC, abstractmethod
+
 
 class Trabalhador(ABC):
     @abstractmethod
@@ -394,6 +398,7 @@ servico.salvar_usuario(usuario)
 print("\nExemplo Bom - Aplicando DIP:")
 
 from abc import ABC, abstractmethod
+
 
 class Database(ABC):
     @abstractmethod
@@ -510,6 +515,7 @@ print("Tornamos o sistema aberto para extensão")
 
 from abc import ABC, abstractmethod
 
+
 class Notificador(ABC):
     @abstractmethod
     def enviar(self, mensagem, destinatario):
@@ -566,6 +572,7 @@ print("Invertemos a dependência fazendo com que o cliente injete o notificador"
 
 from abc import ABC, abstractmethod
 
+
 class Notificador(ABC):
     @abstractmethod
     def enviar(self, mensagem, destinatario):
@@ -602,6 +609,7 @@ print("\nEstágio 5: Versão Final")
 print("Chegamos naturalmente ao padrão Strategy sem planejá-lo!")
 
 from abc import ABC, abstractmethod
+
 
 # Strategy Pattern: Interface de estratégia
 class EstrategiaNotificacao(ABC):
